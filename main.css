@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+
+:root {
+    --orange: #ea5546;
+    --darkgrey: #2d3565;
+    --aqua: #4996b4;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    display: block;
+    border: 1px solid #c1c3c4;
+    padding: 5px 9px;
+    font-weight: 500;
+}
+
+input::placeholder {
+    color: #d8d8d8;
+    font-weight: 700;
+}
+
+.btn {
+    border: 0;
+    width: 200px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4996b4;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0f3486;
+}
+
+/* MENU ---------- */
+.menu nav {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+.menu-item {
+    display: inline-block;
+    margin-right: 7px;
+
+}
+
+
+.menu-item a {
+    color: var(--darkgrey);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.arrow-icon {
+    display: inline-block;
+    margin-left: 7px;
+    color: var(--orange);
+    color: #ea5546;
+    font-weight: 12px;
+}
+
+.menu {
+    position: relative;
+    min-height: 70px;
+    align-items: center;
+    display: flex;
+    padding: 0 20px;
+}
+
+.menu-user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-btn {
+    background-color: #ea5546;
+    border: none;
+    height: 70px;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 11px;
+    margin-left: 25px;
+}
+
+.user-icon {
+    font-size: 26px;
+    color: #2d3536;
+}
+
+
+/* LOGIN PAGE------------------------------------------------------------------------------------ */
+.login-wrapper {
+    min-height: 100vh;
+    background-image: url("./images/iceland1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-form {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 6px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* inputy które są wewnąttrz elementu z klasą login form */
+
+.login-form input {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.login-back {
+    display: block;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+.login-back a {
+    color: #4996b4;
+
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* DETAILS PAGE ----------- */
+
+.details-banner {
+    background-image: url(./images/banner.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 450px;
+}
+
+.details-banner-wrapper {
+    width: 85%;
+    max-width: 1180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.details-title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.details-breadcrumbs {
+    display: flex;
+    gap: 30px;
+}
+
+.details-breadcrumbs li {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.details-breadcrumbs li:first-child {
+    list-style-type: none;
+}
+
+.details-content {
+    background-color: #f0f1f1;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+}
+
+.details-content-wrapper {
+    width: 85%;
+    max-width: 1180px;
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.left-side {
+    background-color: #fff;
+    width: 66%;
+}
+
+.right-side {
+    background-color: coral;
+    width: 33%;
+}
+
+.left-menu {
+    display: flex;
+    border-bottom: 1px solid #e2e2e3;
+}
+
+.left-menu span {
+display: block;
+border-left: 1px solid #e2e2e3;
+padding: 16px;
+text-align: center; 
+font-size: 12px;
+font-weight: 700;
+color: var(--darkgrey);
+flex: 1;
+}
+
+.left-side span:first-child {
+border-bottom: 3px solid var(--aqua);
+border-left: none;
+color: var(--aqua);
+}
+
+.left-side span:hover {
+    color: var(--aqua)
+}
+
+.leftbox {
+    margin-left: 40px;
+    margin-right: 40px;
+    color: var(--darkgrey);
+    font-size: medium;
+}
+
+.islandmap {
+
+width: 100%;
+height:460px;
+justify-items: center;
+border: 0;
+}
+
+.top {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.route {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+a.przycisk {
+    display: block;
+    margin: 30px auto 7px auto;
+    cursor: pointer;
+    width: 340px;
+    padding: 20px 25px;
+    background-color: #5187a3;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius:  48px;
+
+}
